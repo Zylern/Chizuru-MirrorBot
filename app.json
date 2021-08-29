@@ -57,6 +57,11 @@
           "description": "Read the readme for more info about this var",
           "required": false
       },
+      "HAS_SSL": {
+          "description": "Read the readme for more info about this var",
+          "required": true
+          "value" : "False"
+      },
       "FQDN": {
           "description": "Read the readme for more info about this var",
           "required": false
