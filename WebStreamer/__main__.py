@@ -51,12 +51,12 @@ async def start_services():
             spec.loader.exec_module(load)
             sys.modules["WebStreamer.bot.plugins." + plugin_name] = load
             print("Imported => " + plugin_name)
-    if Var.ON_HEROKU:
+"""    if Var.ON_HEROKU:
         print('------------------ Starting Keep Alive Service ------------------')
         print('\n')
         scheduler = BackgroundScheduler()
         scheduler.add_job(ping_server, "interval", seconds=1200)
-        scheduler.start()
+        scheduler.start()"""
     print('-------------------- Initalizing Web Server --------------------')
     app = web.AppRunner(await web_server())
     await app.setup()
