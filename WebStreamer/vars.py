@@ -11,7 +11,7 @@ class Var(object):
     API_HASH = str(getenv('API_HASH'))
     BOT_TOKEN = str(getenv('BOT_TOKEN'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
-    WORKERS = int(getenv('WORKERS', '3'))
+    WORKERS = int(getenv('WORKERS', '2'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', None))     
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
