@@ -9,4 +9,7 @@ START_TIME = datetime.now()
 
 @StreamBot.on_message(filters.command(['start', 'help']))
 async def start(_, m: Message):
-    await m.reply(f'**Hi, Send me a file to get an instant direct link.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}**')
+    await m.reply(
+        f"**Hi, Send me a file to get an instant direct link.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}**",
+    )
+    
